@@ -18,31 +18,29 @@ Program splited into cells #%% to make easier on step by step.
 4. Formatting data to be read by ZIPLINE basic pandas here...
 5. This function will create adjusted data on folder /data/csvs/daily
 6. Modify your extension.py file to ingest data, generally located here C:\Users\YOURNAME\.zipline see sample on extension.py
-      6.1 See SAMPLE-FILE_extension.py 
-      6.2 On your extension.py you'll need to add your path and your trading dates
-7. Once here, you're prepared to ingest the data to be used by running on your virtual environment prompt: $ zipline -b ingest custom-csvdir-bundle
+7. See SAMPLE-FILE_extension.py 
+8. On your extension.py you'll need to add your path and your trading dates
+9. Once here, you're prepared to ingest the data to be used by running on your virtual environment prompt: $ zipline -b ingest custom-csvdir-bundle
 
 
 #### ====== PHASE 2 ALGORITHM LOGICS ====== ####
 
 1. Define your context, initialize, handle_data if needed, read zipline documentation for more. ;)
-       1.1 Due weight strategy, ETF's weight = 25% of total portfolio size
-       1.2 Schedule function to trigger the rebalance function as you see, monthly to make it funnier for sample (Harry Browne Model adjust yearly)
-       1.3 Creating a benchmark (as sample on the code bear in mind SPY is one of the ETF's we hold in the portfolio ;) ) 
-       1.4 Rebalance function to readjust weights once schedule function is triggered.
-       1.5 Create a sector map for further analysis. Convenient for stocks.
-2. Running the backtest SELECT CORRECT DATES and (read run_algorithm() docs, to go deeper on this) but basically we select the data source, 
-   dates, previous data (initialize), handle_data if needed, starting capital, etc. 
+2. Due weight strategy, ETF's weight = 25% of total portfolio size
+3. Schedule function to trigger the rebalance function as you see, monthly to make it funnier for sample (Harry Browne Model adjust yearly)
+4.  Creating a benchmark (as sample on the code bear in mind SPY is one of the ETF's we hold in the portfolio ;) ) 
+5.  Rebalance function to readjust weights once schedule function is triggered.
+6.  Create a sector map for further analysis. Convenient for stocks.
+7. Running the backtest SELECT CORRECT DATES and (read run_algorithm() docs, to go deeper on this) but basically we select the data source, dates, previous data (initialize), handle_data if needed, starting capital, etc. 
 
 
 
 #### ====== PHASE 3 ANALYSIS ====== ####
 
 1. On analysis.py we could define functions for the performance, bencmhark and analysis charts what we will require
-        1.1 As an example we will do it importing create_benchmark from analysis.py
-        1.2 The more you customise your system the more convenient to fullfill this analyisis file to clean the main code. 
-
-2. Creating a benchmark to compare results. As said before SPY what we hold, but just as an example.
+2. As an example we will do it importing create_benchmark from analysis.py
+3. The more you customise your system the more convenient to fullfill this analyisis file to clean the main code. 
+4. Creating a benchmark to compare results. As said before SPY what we hold, but just as an example.
 
 
 IS CONVENIENT TO READ:
