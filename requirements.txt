@@ -1,0 +1,7 @@
+pandas
+numpy
+zipline
+zipline-reloaded
+pyfolio
+pyfolio-reloaded
+matplotlib
