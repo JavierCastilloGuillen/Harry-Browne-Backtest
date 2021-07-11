@@ -45,6 +45,5 @@ Program splited into cells #%% to make easier on step by step.
 
 IS CONVENIENT TO READ:
 
-Read: https://zipline-trader.readthedocs.io/en/latest/
-Step by step on install https://zipline.ml4trading.io/
+Read the documentation for more information: https://zipline.ml4trading.io/
 Problems with ingesting data:https://zipline.ml4trading.io/bundles.html
