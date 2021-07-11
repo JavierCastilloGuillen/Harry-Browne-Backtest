@@ -17,7 +17,7 @@ Program splited into cells #%% to make easier on step by step.
 3. We will need it to index our market data
 4. Formatting data to be read by ZIPLINE basic pandas here...
 5. This function will create adjusted data on folder /data/csvs/daily
-6. Modify your extension.py file to ingest data, generally located here C:\Users\YOURNAME\.zipline see sample on extension.py
+6. Modify your extension.py file to ingest data, generally located here C:\Users\YOURNAME\\.zipline see sample on extension.py
 7. See SAMPLE-FILE_extension.py 
 8. On your extension.py you'll need to add your path and your trading dates
 9. Once here, you're prepared to ingest the data to be used by running on your virtual environment prompt: $ zipline -b ingest custom-csvdir-bundle
