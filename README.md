@@ -10,7 +10,7 @@ Then two SAMPLE files. as a way to understand better the step by step described 
 The Permanent_Portfolio_web_example.py has 3 steps described during the process
 Program splited into cells #%% to make easier on step by step.
 
-#### ====== PHASE 1 DATA RETREIVAL, FILTERING AND PROCESSING ====== ####
+#  PHASE 1 DATA RETREIVAL, FILTERING AND PROCESSING 
 
 1. Get the stocks to be used on backtest. For our example 4 ETF's and store them on data/bars_adj
 2. Get Trading Calendar Days Running: trading_days.py MODIFY DATES according to your stock data!!
@@ -23,7 +23,7 @@ Program splited into cells #%% to make easier on step by step.
 9. Once here, you're prepared to ingest the data to be used by running on your virtual environment prompt: $ zipline -b ingest custom-csvdir-bundle
 
 
-#### ====== PHASE 2 ALGORITHM LOGICS ====== ####
+# PHASE 2 ALGORITHM LOGICS 
 
 1. Define your context, initialize, handle_data if needed, read zipline documentation for more. ;)
 2. Due weight strategy, ETF's weight = 25% of total portfolio size
@@ -35,7 +35,7 @@ Program splited into cells #%% to make easier on step by step.
 
 
 
-#### ====== PHASE 3 ANALYSIS ====== ####
+# PHASE 3 ANALYTICS 
 
 1. On analysis.py we could define functions for the performance, bencmhark and analysis charts what we will require
 2. As an example we will do it importing create_benchmark from analysis.py
