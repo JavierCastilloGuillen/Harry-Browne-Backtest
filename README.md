@@ -21,7 +21,7 @@ Program splited into cells #%% to make easier on step by step.
 -  Once here, you're prepared to ingest the data to be used by running on your virtual environment prompt: $ zipline -b ingest custom-csvdir-bundle
 
 
-# PHASE 2 ALGORITHM LOGICS 
+## PHASE 2 ALGORITHM LOGICS 
 
 - Define your context, initialize, handle_data if needed, read zipline documentation for more. ;)
 - Due weight strategy, ETF's weight = 25% of total portfolio size
@@ -33,7 +33,7 @@ Program splited into cells #%% to make easier on step by step.
 
 
 
-# PHASE 3 ANALYTICS 
+## PHASE 3 ANALYTICS 
 
 - On analysis.py we could define functions for the performance, bencmhark and analysis charts what we will require
 - As an example we will do it importing create_benchmark from analysis.py
@@ -41,7 +41,7 @@ Program splited into cells #%% to make easier on step by step.
 - Creating a benchmark to compare results. As said before SPY what we hold, but just as an example.
 
 
-IS CONVENIENT TO READ:
+### IS CONVENIENT TO READ:
 
 Read the documentation for more information: https://zipline.ml4trading.io/
 Problems with ingesting data:https://zipline.ml4trading.io/bundles.html
